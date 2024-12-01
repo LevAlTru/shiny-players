@@ -1,0 +1,20 @@
+{
+  "pack": {
+    "description": {
+      "text": "Make the Players ",
+      "extra": [
+        {
+          "text": "Shiny",
+          "color": "aqua",
+          "italic": true
+        },
+        {
+          "text": "\n     [Shiny Players]",
+          "color": "#005cb3"
+        }
+      ],
+      "color": "#00bfff"
+    },
+    "pack_format": 46
+  }
+}
