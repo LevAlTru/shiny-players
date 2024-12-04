@@ -32,7 +32,7 @@ void main() {
 	if (texelFetch(Sampler0, ivec2(56, 7), 0) == vec4(186.0 / 255.0, 36.0 / 255.0, 255.0 / 255.0, 1.0)) {
 		for (int i = 0; i < 48; i++) {
 			int x = 63 - (i % 8);
-			int y = 1 + i / 8 + int(step(24, i));
+			int y = 1 + i / 8 + int(step(24.0, float(i)));
 			int iy = (i / 24) * 4;
 			int takeColor = (i / 8) % 3;
 			if(ogColor == texelFetch(Sampler0, ivec2(x, y), 0)) {
