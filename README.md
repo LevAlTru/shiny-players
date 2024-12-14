@@ -3,7 +3,9 @@
 
 A resourcepack for making players' textures shiny (aka making them ignore light-levels)
 
-Mini-gallery:
+
+
+### Mini-gallery:
 
 ![image](https://github.com/user-attachments/assets/8d56296d-0efc-49e3-a3d2-eb66fbc22635)
 
