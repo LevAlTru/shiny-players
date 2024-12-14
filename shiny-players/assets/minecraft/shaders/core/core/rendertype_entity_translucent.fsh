@@ -29,6 +29,7 @@ void main() {
     color.rgb = mix(overlayColor.rgb, color.rgb, overlayColor.a);
     color *= lightMapColor;
 	//custom start
+	if (color.a < 0.1) discard;
 	if (texelFetch(Sampler0, ivec2(56, 7), 0) == vec4(186.0 / 255.0, 36.0 / 255.0, 255.0 / 255.0, 1.0)) {
 		for (int i = 0; i < 48; i++) {
 			int x = 63 - (i % 8);

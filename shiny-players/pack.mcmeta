@@ -15,7 +15,7 @@
       ],
       "color": "#00bfff"
     },
-    "pack_format": 42,
-	"supported_formats": [42, 46]
+    "pack_format": 32,
+	"supported_formats": [32, 46]
   }
 }
