@@ -1,7 +1,19 @@
-# shiny-players
-| [Modrinth](https://modrinth.com/resourcepack/shiny-players) | [Planet Minecraft](https://www.planetminecraft.com/texture-pack/shiny-players/) |
+A resourcepack for making you textures shiny! (aka to make them glow in the dark)
+<br><br>
+**!! Texturepack will not be added to newer versions, because of the changes to core shaders, unless i find a way to update it !!**
+<br><br>
+**It works on Vanilla, Sodium and Entity Features mod!**
 
-A resourcepack for making players' textures shiny (aka making them ignore light-levels)
+Use cases included but not limited to:
+- Making your eyes glow!
+- Making your CRT monitor display _glow_
+- Making your halo glow!
+- Making your eyes glow!
+- Making yourself glow constantly so you can blind your opponents! (if they have the resourcepack)
+- Making your eyes glow!
+
+
+Tutorial for making skin _shiny_ : [Github wiki](https://github.com/LevAlTru/shiny-players/wiki/Tutorial-for-making-a-shiny-skin)
 
 
 
