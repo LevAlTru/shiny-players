@@ -29,17 +29,13 @@ void main() {
     color.rgb = mix(overlayColor.rgb, color.rgb, overlayColor.a);
     color *= lightMapColor;
 	//custom start
-	if (texelFetch(Sampler0, ivec2(56, 7), 0) == vec4(186.0 / 255.0, 36.0 / 255.0, 255.0 / 255.0, 1.0)) {
-		for (int i = 0; i < 48; i++) {
+	if (texelFetch(Sampler0, ivec2(56, 7), 0) == vec4(186.0 / 255.0, 37.0 / 255.0, 255.0 / 255.0, 1.0)) { // BA25FF
+		for (int i = 0; i < 63; i++) {
 			int x = 63 - (i % 8);
-			int y = 1 + i / 8 + int(step(24.0, float(i)));
-			int iy = (i / 24) * 4;
-			int takeColor = (i / 8) % 3;
-			if(ogColor == texelFetch(Sampler0, ivec2(x, y), 0)) {
-				vec4 intensityWithAlpha = texelFetch(Sampler0, ivec2(x, iy), 0);
-				if (intensityWithAlpha.a < 0.1) continue;
-				vec3 intensity = texelFetch(Sampler0, ivec2(x, iy), 0).rgb;
-				color = mix(color, ogColor, intensity[takeColor]);
+			int y = i / 8;
+			vec4 fetch = texelFetch(Sampler0, ivec2(x, y), 0);
+			if(fetch.a > 0.0 && ogColor.rgb == fetch.rgb) {
+				color = mix(color, ogColor, fetch.a);
 				break;
 			}
 		}
